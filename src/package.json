@@ -1,0 +1,20 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildInject": "npm run build && npm run inject",
+    "build": "node build.js",
+    "inject": "node inject.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@electron/asar": "^3.2.10",
+    "asar": "^3.2.0"
+  },
+  "type": "module"
+}
