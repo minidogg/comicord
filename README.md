@@ -1,2 +1,5 @@
-# comicord
-The worst discord client mod
+# ComiCord (Pronounced comic cord)
+The worst discord client mod.
+
+## Feature
+- Makes everthing Comic Sans.

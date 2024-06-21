@@ -9,7 +9,12 @@ style.innerHTML = `
 `
 document.body.appendChild(style)
 
-// let ven = require(path.join(injectedScripts, "/vencord.cjs")) //commit vencord
+
+// silly apis
+Object.defineProperty(window, "ComiCord", {
+    api:{}
+})
+let getToken = require(path.join(injectedScripts, "/token.cjs")) 
 
 
 console.log("%cFinished ComiCord preload script stuff", "font-size:50px;color:yellow;")
