@@ -1,4 +1,6 @@
 console.log("%cHello from ComiCord", "font-size:50px;color:yellow;")
+
+let path = require("path") 
 let style = document.createElement("style")
 style.innerHTML = `
     *{
@@ -6,3 +8,8 @@ style.innerHTML = `
     }
 `
 document.body.appendChild(style)
+
+// let ven = require(path.join(injectedScripts, "/vencord.cjs")) //commit vencord
+
+
+console.log("%cFinished ComiCord preload script stuff", "font-size:50px;color:yellow;")

@@ -2,7 +2,7 @@ import * as path from 'path';
 
 export default function patch(){
     let patch = {
-        "id": "inject",
+        "id": "preloadInject",
         "description": "Injects some base code into the front-end thingy",
         "path": "/modules/discord_desktop_core-1/discord_desktop_core/core.asar",
         "file": "app/mainScreenPreload.js",
@@ -12,6 +12,7 @@ export default function patch(){
             setTimeout(() => {
                 const fs = require('fs');
                 const script = fs.readFileSync('${path.resolve("./injectedScripts/index.cjs").replaceAll("\\","/")}', 'utf8');
+                const injectedScripts = "${path.resolve("./injectedScripts/").replaceAll("\\","/")}"
                 eval(script);
             }, 3000);
         });
