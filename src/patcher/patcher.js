@@ -55,6 +55,9 @@ export function patchFile(patchJson, contextPath=discordAppPath){
         case("addition"):
             fileData+=patchJson.text;
             break;
+        case("prepend"):
+            fileData=patchJson.text+fileData
+            break;
         default:
             throw new PatchError(`Invalid patch type: ${patchJson.type}`)
     }
