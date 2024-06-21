@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "buildInject": "npm run build && npm run inject",
+    "unpatchBuildInject": "npm run unpatch && npm run build && npm run inject",
     "build": "node build.js",
-    "inject": "node inject.js"
+    "inject": "node inject.js",
+    "unpatch": "node unpatch.js"
   },
   "keywords": [],
   "author": "",

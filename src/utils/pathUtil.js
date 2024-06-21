@@ -7,3 +7,6 @@ export function getDiscordAppPath(){
     let appPath = fs.readdirSync(discordPath).find(e=>e.startsWith("app-"));
     return path.join(discordPath, appPath)
 }
+export function getDiscordAppPathName(){
+    return path.basename(getDiscordAppPath())
+}
