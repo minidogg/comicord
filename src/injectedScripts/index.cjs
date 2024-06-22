@@ -9,12 +9,14 @@ style.innerHTML = `
 `
 document.body.appendChild(style)
 
+setTimeout(e=>{
+    // silly apis
+    Object.defineProperty(window, "ComiCord", {
+        api:{}
+    })
+    // let getToken = require(path.join(injectedScripts, "/token.cjs")) 
+}, 3000)
 
-// silly apis
-Object.defineProperty(window, "ComiCord", {
-    api:{}
-})
-let getToken = require(path.join(injectedScripts, "/token.cjs")) 
 
 
 console.log("%cFinished ComiCord preload script stuff", "font-size:50px;color:yellow;")

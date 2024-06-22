@@ -6,7 +6,7 @@ export default function patch(){
         "description": "Injects some base code into the front-end thingy",
         "path": "/modules/discord_desktop_core-1/discord_desktop_core/core.asar",
         "file": "app/mainScreenPreload.js",
-        "type": "prepend",
+        "type": "addition",
         "text": `
         window.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
